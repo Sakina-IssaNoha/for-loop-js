@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function multiples(){
+            for (var x=1; x<=100; x++){
+                if(x % 3 ==0 && x % 5==0){
+                     console.log("FizzBuzz");
+                }
+                else if(x%3==0){
+                    console.log("Fizz")
+                } 
+                else if (x%5==0){
+                    console.log("Buzz")
+                }
+                else {
+                    console.log(x)
+                }
+            }
+        }
+
+        function compile(){
+            var sum = 0
+            for(var y=0; y<1000; y++){
+                if(y%3==0 && y%5==0){
+                    sum+=y;
+                }
+            }
+            console.log(sum)
+        }
+        compile()
+
+        function evenOdd(){
+            for (var a=0; a<20; a++){
+                if(a%2==0){
+                    console.log(a,"is even")
+                }
+                else{
+                    console.log(a,"is odd")
+                }
+            }
+        }
+        evenOdd()
+
+        function largestnum(){
+            let num = [-2,4,-5,6,0];
+            largest=0
+            for(let i=0; i<num.length;i++){
+                if(num[i]>largest){
+                    largest=num[i];
+                }
+            }
+            console.log(largest)
+        }
+        largestnum()
+
+        function largest(){
+            var a=10
+            var b=40
+            if(a>b){
+                console.log(a,"is greater than",b)
+            }
+            else{
+                console.log(b,"is greater than", a)
+            }
+        }
+    
+        largest()
+        
+
+        function leapYears(){
+            for(i=2000;i<=2022;i++){
+                if(i%4!=0 && i%400!=0){ 
+                console.log(i,"is not a leap year");
+            }
+                
+                else{
+                console.log(i,"is a leap year")
+            }
+        
+        }
+    }
+    leapYears()
+    </script>
+</body>
+</html>
